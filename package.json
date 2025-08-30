@@ -20,12 +20,11 @@
       "postcss"
     ],
     "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test",
-      "eject": "react-scripts eject",
+      "start": "vite",
+      "build": "vite build --sourcemap",
+      "serve": "vite preview",
       "predeploy": "npm run build",
-      "deploy": "gh-pages -d build"
+      "deploy": "gh-pages -d dist"
     },
     "warning": "🚨 CRITICAL: DO NOT REMOVE OR MODIFY ABOVE DEPENDENCIES - Required for app functionality"
   },
