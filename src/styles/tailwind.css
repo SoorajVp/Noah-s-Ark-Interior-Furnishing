@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core System Colors */
+    --color-background: #FEFEFE; /* white */
+    --color-foreground: #2C3E50; /* slate-800 */
+    --color-border: rgba(0, 0, 0, 0.08); /* black with opacity */
+    --color-input: #F8F9FA; /* gray-50 */
+    --color-ring: #D4AF37; /* gold */
+    
+    /* Card Colors */
+    --color-card: #FEFEFE; /* white */
+    --color-card-foreground: #2C3E50; /* slate-800 */
+    --color-popover: #FEFEFE; /* white */
+    --color-popover-foreground: #2C3E50; /* slate-800 */
+    
+    /* Muted Colors */
+    --color-muted: #F8F9FA; /* gray-50 */
+    --color-muted-foreground: #6C757D; /* gray-500 */
+    
+    /* Primary Brand Colors */
+    --color-primary: #2C3E50; /* slate-800 */
+    --color-primary-foreground: #FEFEFE; /* white */
+    --color-secondary: #8B7355; /* amber-700 */
+    --color-secondary-foreground: #FEFEFE; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #D4AF37; /* gold */
+    --color-accent-foreground: #2C3E50; /* slate-800 */
+    
+    /* Status Colors */
+    --color-success: #28A745; /* green-600 */
+    --color-success-foreground: #FEFEFE; /* white */
+    --color-warning: #FFC107; /* yellow-500 */
+    --color-warning-foreground: #2C3E50; /* slate-800 */
+    --color-error: #DC3545; /* red-600 */
+    --color-error-foreground: #FEFEFE; /* white */
+    --color-destructive: #DC3545; /* red-600 */
+    --color-destructive-foreground: #FEFEFE; /* white */
+    
+    /* Surface Colors */
+    --color-surface: #F8F9FA; /* gray-50 */
+    --color-surface-foreground: #2C3E50; /* slate-800 */
+    
+    /* Text Colors */
+    --color-text-primary: #2C3E50; /* slate-800 */
+    --color-text-secondary: #6C757D; /* gray-500 */
+    
+    /* Sanctuary Theme Colors */
+    --color-sanctuary-white: #FEFCF8; /* warm white */
+    --color-sanctuary-gray: #F8F6F3; /* soft gray */
+    --color-warm-gold: #B8860B; /* dark goldenrod */
+    --color-forest-green: #1B4332; /* dark green */
+    --color-deep-sage: #2F4F4F; /* dark slate gray */
+    
+    /* Shadow Values */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    
+    /* Border Radius */
+    --radius: 8px;
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+  }
+  
+  body, p, span, div, button, input, textarea, select {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-accent {
+    font-family: 'Dancing Script', cursive;
+  }
+}
+
+@layer components {
+  .sanctuary-breathing {
+    animation: sanctuary-breathe 8s ease-in-out infinite;
+  }
+  
+  @keyframes sanctuary-breathe {
+    0%, 100% { background-color: var(--color-sanctuary-white); }
+    50% { background-color: var(--color-sanctuary-gray); }
+  }
+  
+  .floating-element {
+    animation: gentle-float 4s ease-in-out infinite;
+  }
+  
+  @keyframes gentle-float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .sanctuary-transition {
+    transition: all 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .sanctuary-hover {
+    @apply sanctuary-transition;
+  }
+  
+  .sanctuary-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .backdrop-sanctuary {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
