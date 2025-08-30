@@ -2,6 +2,12 @@
   "name": "noah-s-ark-interior",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build --sourcemap",
+    "serve": "vite preview"
+  },
   "rocketCritical": {
     "dependencies": [
       "@dhiwise/component-tagger",
@@ -19,13 +25,11 @@
       "autoprefixer",
       "postcss"
     ],
-    "scripts": {
-      "start": "vite",
-      "build": "vite build --sourcemap",
-      "serve": "vite preview",
-      "predeploy": "npm run build",
-      "deploy": "gh-pages -d dist"
-    },
+    "scripts": [
+      "start",
+      "build",
+      "serve"
+    ],
     "warning": "🚨 CRITICAL: DO NOT REMOVE OR MODIFY ABOVE DEPENDENCIES - Required for app functionality"
   },
   "dependencies": {
@@ -87,7 +91,6 @@
     "@tailwindcss/typography": "^0.5.16",
     "@vitejs/plugin-react": "4.3.4",
     "autoprefixer": "10.4.2",
-    "gh-pages": "^6.3.0",
     "postcss": "8.4.8",
     "tailwindcss": "3.4.6",
     "vite": "5.0.0",
