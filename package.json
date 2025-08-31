@@ -3,11 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "scripts": {
-    "start": "vite",
-    "build": "vite build --sourcemap",
-    "serve": "vite preview"
-  },
   "rocketCritical": {
     "dependencies": [
       "@dhiwise/component-tagger",

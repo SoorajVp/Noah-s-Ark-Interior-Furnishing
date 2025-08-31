@@ -12,10 +12,10 @@ import Homepage from './pages/homepage';
 
 const Routes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/noah-s-ark-interior">
       <ErrorBoundary>
       <ScrollToTop />
-      <RouterRoutes>
+      <RouterRoutes >
         {/* Define your route here */}
         <Route path="/" element={<About />} />
         <Route path="/services" element={<Services />} />
