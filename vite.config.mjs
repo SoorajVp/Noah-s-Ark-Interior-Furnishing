@@ -6,7 +6,6 @@ import tagger from "@dhiwise/component-tagger";
 // https://vitejs.dev/config/
 export default defineConfig({
   // Add this line. Replace 'noah-s-ark-interior' with your actual repository name.
-  base: "/noah-s-ark-interior/",
   build: {
     outDir: "build",
     chunkSizeWarningLimit: 2000,

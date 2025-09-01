@@ -12,7 +12,7 @@ import Homepage from './pages/homepage';
 
 const Routes = () => {
   return (
-    <BrowserRouter basename="/noah-s-ark-interior">
+    <BrowserRouter >
       <ErrorBoundary>
       <ScrollToTop />
       <RouterRoutes >
