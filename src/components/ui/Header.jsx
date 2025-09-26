@@ -46,17 +46,10 @@ const Header = () => {
           {/* Logo Section */}
           <Link 
             to="/homepage" 
-            className="flex items-center space-x-3 sanctuary-hover"
+            className="flex items-center space-x-3"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-              <svg 
-                viewBox="0 0 24 24" 
-                className="w-6 h-6 text-white" 
-                fill="currentColor"
-              >
-                <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                <path d="M8 11l2 2 4-4" stroke="currentColor" strokeWidth="2" fill="none"/>
-              </svg>
+            <div className="flex items-center justify-center">
+              <img src="/noah-s-interior-logo.png" alt="Noah's Ark Interior Furnishing Logo" width={50} height={50} />
             </div>
             <div className="flex flex-col">
               <span className="font-playfair font-semibold text-lg text-primary leading-tight">
