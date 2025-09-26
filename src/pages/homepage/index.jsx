@@ -43,7 +43,7 @@ const Homepage = () => {
           content="Premium interior design services that transform spaces into personal sanctuaries. Discover your design style and create the home of your dreams." 
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://noahsarkinterior.com" />
+        <meta property="og:url" content="https://www.noahsarkinterior.in" />
         <meta 
           property="og:image" 
           content="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
@@ -54,15 +54,15 @@ const Homepage = () => {
           name="twitter:description" 
           content="Premium interior design services that transform spaces into personal sanctuaries. Discover your design style and create the home of your dreams." 
         />
-        <link rel="canonical" href="https://noahsarkinterior.com" />
+        <link rel="canonical" href="https://www.noahsarkinterior.in" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Noah's Ark Interior Furnishing",
             "description": "Premium interior design and furnishing consultancy creating personal sanctuaries",
-            "url": "https://noahsarkinterior.com",
-            "logo": "https://noahsarkinterior.com/logo.png",
+            "url": "https://www.noahsarkinterior.in",
+            "logo": "https://www.noahsarkinterior.in/noah-s-interior-logo.png",
             "contactPoint": {
               "@type": "ContactPoint",
               "telephone": "+1-555-DESIGN",
@@ -187,6 +187,7 @@ const Homepage = () => {
             </div>
           </section>
         </main>
+        
 
         {/* Footer */}
         <footer className="bg-primary text-white py-12">
@@ -195,11 +196,8 @@ const Homepage = () => {
               {/* Company Info */}
               <div className="md:col-span-2">
                 <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-10 h-10 bg-gradient-to-br from-accent to-warm-gold rounded-lg flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" className="w-6 h-6 text-white" fill="currentColor">
-                      <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
-                      <path d="M8 11l2 2 4-4" stroke="currentColor" strokeWidth="2" fill="none"/>
-                    </svg>
+                  <div className="flex items-center justify-center">
+                    <img src="/noah-s-interior-logo.png" alt="Noah's Ark Interior Furnishing Logo" width={50} height={50} />
                   </div>
                   <div>
                     <h3 className="font-playfair font-semibold text-xl">Noah's Ark</h3>
